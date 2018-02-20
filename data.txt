@@ -1,5 +1,7 @@
 cosmo,easy,vodka,strong,sweet
 40ml vodka,200ml orange juice,50ml grenadine syrup
+sukeu,easy,vodka,strong,sweet
+80ml of whiskey,120ml sprite,40ml curacao syrup,lychee
 vix,hard,whiskey,soft,sour
 80ml of whiskey,120ml sprite,40ml curacao syrup,lychee
 Planter’s Punch,medium,rum,medium,sweet
