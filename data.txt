@@ -1,7 +1,7 @@
 cosmo,easy,vodka,strong,sweet
-40ml of vodka,200ml of orange juice,50ml grenadine syrup
-vix,complicated,whiskey,soft,sour
-80ml of whiskey, 120ml of sprite, 40ml curacao syrup, lychee
-Planter’s Punch
-Planter’s Punch,22ml Lime juice,30 ml Simple syrup,1 barspoon Grenadine,3 dashes Angostura bittersAngostura bitters Angostura bittersAngostura bitters
+40ml vodka,200ml orange juice,50ml grenadine syrup
+vix,hard,whiskey,soft,sour
+80ml of whiskey,120ml sprite,40ml curacao syrup,lychee
+Planter’s Punch,medium,rum,medium,sweet
+22ml Lime juice,30 ml Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
 

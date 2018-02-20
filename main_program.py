@@ -58,7 +58,7 @@ def get_inputs(titles):
 
 def get_titles():
 
-    titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin, whiskey or wine? ',
+    titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin, whiskey or tequila? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
     return titles
 
