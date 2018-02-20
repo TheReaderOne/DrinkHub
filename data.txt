@@ -1,0 +1,4 @@
+cosmo,easy,vodka,strong,sweet
+40ml of vodka,200ml of orange juice,50ml grenadine syrup
+vix,complicated,whiskey,soft,sour
+80ml of whiskey, 120ml of sprite, 40ml curacao syrup, lychee
