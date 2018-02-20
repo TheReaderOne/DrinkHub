@@ -1,26 +1,31 @@
+import sys
+import os
+import ui
+import time
 
-def import_data_from_file(filename='data.txt'):
+def import_data_from_file(filename = 'data.txt'):
 
     data_temp = []
     data_preferences = []
     data_ingredients = []
     drink_data_dict = {}
 
-    with open(filename) as file:
+    with open (filename) as file:
         data = file.read().strip()
         for line in data.split('\n'):
             line_list = [x for x in line.strip().split(',')]
             data_temp.append(line_list)
 
-    for data in range(0, len(data_temp), 2):
-        data_preferences.append(data_temp[data])
 
-    for data in range(1, len(data_temp), 2):
+    for data in range(0,len(data_temp),2):
+        data_preferences.append(data_temp[data])
+    for data in range(1,len(data_temp),2):
         data_ingredients.append(data_temp[data])
 
+
     for index in range(len(data_preferences)):
-        drink_data_dict[data_preferences[index][0]] = [
-            data_preferences[index][1:], data_ingredients[index]]
+        drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:],data_ingredients[index]]
+
 
     return drink_data_dict
 
@@ -63,7 +68,8 @@ def get_inputs(titles):
 
 
 def get_titles():
-
+    print ('Give us your preferences')
+    time.sleep(1)
     titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin, whiskey or wine? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
     return titles
@@ -95,29 +101,15 @@ def make_drink(drinks_dict, user_input):
 
 
 def get_titles_to_make_drink():
-    titles = ['type of %', 'juice type', 'type of syrup', 'type of fruit']
+    print ('Give us your preferred ingredients')
+    time.sleep(1)
+    titles = ['type of alkohol', 'type of juice', 'type of syrup', 'type of fruit']
     return titles
 
 
 def main():
-
-    print('welcome in DrinkHub')
-
-    pick_input = 1  # initialize loop
-    exit_input = '3'
-    while exit_input != pick_input:
-        pick_input = input(
-            'choose option: 1 - choose your drink 2 - make drink 3 - exit ||')
-
-        if pick_input == '1':
-            print("please choose your drink-type preferention: " + '\n')
-            preference = get_inputs(get_titles())
-            choose_drink(preference, import_data_from_file())
-        if pick_input == '2':
-            print('make drink' + '\n')
-            preference = get_inputs(get_titles_to_make_drink())
-            make_drink(import_data_from_file(
-                'data_craft_drink.txt'), preference)
+    ui.start_menu_select()
+    ui.handle_menu()
 
 
 if __name__ == '__main__':
