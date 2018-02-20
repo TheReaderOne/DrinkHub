@@ -4,6 +4,6 @@ sukeu,easy,vodka,strong,sweet
 80ml of whiskey,120ml sprite,40ml curacao syrup,lychee
 vix,hard,whiskey,soft,sour
 80ml of whiskey,120ml sprite,40ml curacao syrup,lychee
-Planter’s Punch,medium,rum,medium,sweet
+Planter's Punch,medium,rum,medium,sweet
 22ml Lime juice,30 ml Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
 

@@ -34,15 +34,42 @@ def choose_drink(preference,database):
             recipe = drink_data[1]
             searched_dict[drink] = recipe
 
-    print("write name of interested drink:" + '\n')
+    print("found drinks:" + '\n')
     for key in searched_dict.keys():
         print(key)
     
-    pick_final_drink = input('choose drink: ')
-    print('\n' + 'ingredients for ' + pick_final_drink + ':')
-    if pick_final_drink in searched_dict.keys():
-        for ingredients in searched_dict[pick_final_drink]:
-            print(ingredients)
+    search_name = True
+
+    while search_name:
+
+        pick_final_drink = input('\nchoose drink: ')
+        if pick_final_drink in searched_dict.keys(): 
+            print('\n' + 'ingredients for ' + pick_final_drink + ':')
+            for ingredients in searched_dict[pick_final_drink]:
+                print(ingredients)
+                search_name = False 
+        else:
+            print('wrong name - try again')
+
+       
+   
+
+
+
+
+    # pick_final_drink = input('\nchoose drink: ')
+    # search_name = False
+    # if pick_final_drink in searched_dict.keys():
+    #     search_name = True
+
+    # if search_name:
+    #     print('\n' + 'ingredients for ' + pick_final_drink + ':')
+    #     if pick_final_drink in searched_dict.keys():
+    #         for ingredients in searched_dict[pick_final_drink]:
+    #             print(ingredients)
+    # else:
+    #     pass
+   
 
 
 def get_inputs(titles):
@@ -62,13 +89,21 @@ def get_titles():
     return titles
 
 
+
+    
+
 def main():
     preference = ['easy','vodka','strong','sweet']
 
     print('welcome in DrinkHub')
     print("please choose your drink-type preferention: " + '\n')
-    # preference = get_inputs(get_titles())
+    preference = get_inputs(get_titles())
     choose_drink(preference,import_data_from_file())
+    
+
+
+    # if 'vodka' in stringx:
+    #     print('ser')
 
 
 if __name__ == '__main__':
