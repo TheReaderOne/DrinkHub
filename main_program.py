@@ -10,7 +10,7 @@ def import_data_from_file(filename = 'data.txt'):
     with open (filename) as file:
         data = file.read().strip()
         for line in data.split('\n'):
-            line_list = [x for x in line.split(',')]
+            line_list = [x for x in line.strip().split(',')]
             data_temp.append(line_list)
 
     
@@ -23,19 +23,34 @@ def import_data_from_file(filename = 'data.txt'):
     for index in range(len(data_preferences)):
         drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:],data_ingredients[index]]
 
-    
-    print(drink_data_dict)
+
+    return drink_data_dict
 
 
-import_data_from_file()
+def choose_drink(preference,database):
+
+    for key, value in database.items():
+        if preference in value:
+            search_name = key
+          
+            search_ingredients = value
+
+    recipe = search_ingredients[1]
+ 
+    print('ingredients for ' + search_name + '\n')
+    for ingredient in recipe:
+        print(ingredient)
+
+        
+      
+
 
 
 def get_inputs(titles):
 
     data = []
-
     for parameter in titles:
-        user_input = input(parameter)
+        user_input = input(parameter + '\n')
         data.append(user_input)
 
     return data
@@ -43,18 +58,17 @@ def get_inputs(titles):
 
 def get_titles():
 
-    titles = ['easy or complicated?', 'vodka, whiskey or wine?',
-              'strong or soft?', 'sweet or sour taste?']
+    titles = ['easy or complicated? ', 'vodka, whiskey or wine? ',
+              'strong or soft? ', 'sweet or sour taste? ']
     return titles
 
 
 def main():
 
     print('welcome in DrinkHub')
-    # print("please choose your drink-type preferention: " + '\n')
-
-    # preference = get_inputs(get_titles())
-    # print(preference)
+    print("please choose your drink-type preferention: " + '\n')
+    preference = get_inputs(get_titles())
+    choose_drink(preference,import_data_from_file())
 
 
 if __name__ == '__main__':
