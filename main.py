@@ -29,7 +29,7 @@ def import_data_from_file(filename = 'data.txt'):
     for x,y in drink_data_dict.items():
         print(x,y)
     print('\n') ############
-    
+
     return drink_data_dict
 
 
@@ -43,7 +43,7 @@ def choose_drink(preference, database):
             recipe = drink_data[recipe_index]
             searched_dict[drink] = recipe
     print('jezeli znajdzie [easy,vodka,strong,sweet] w bazie z notatnika tworzy nowy  slownik ( dodaje do zdefiniowanego pustego) gdzie klucz to nazwa drinka a wartosc to lista ze skladnikami'   )
-    
+
     for x,y in searched_dict.items() :
         print(x,y)
     print('\n') ###########
@@ -62,7 +62,7 @@ def choose_drink(preference, database):
             for ingredients in searched_dict[pick_final_drink]:
                 print(ingredients)
                 search_name = False
-            
+
             answer = input("Do you want remember your choice? yes/no")
             if answer == "yes":
                 time.sleep(1)
@@ -70,15 +70,13 @@ def choose_drink(preference, database):
                 time.sleep(2)
                 to_save = pick_final_drink + ','
                 save_statistic_to_file(to_save)
-                print ('show stat? yesss')
-                time.sleep(1)
-                import_statistic()
+                ui.handle_menu()
 
 
-            
-            
 
-               
+
+
+
         else:
             print('wrong name - try again')
 
@@ -102,8 +100,8 @@ def get_inputs(titles):
 
 def get_titles():
     print ('Give us your preferences')
-    
-    titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin, whiskey or wine? ',
+
+    titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin or whiskey? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
     return titles
 
@@ -150,15 +148,15 @@ def import_statistic(filename='stats_drink_name'):
     dict_counter = {}
     with open(filename) as file:
         data = file.read().strip()
-    
+
     for name in data.split(','):
         database_table.append(name)
     database_table.pop()
     print(database_table)
-    
+
 
     for name in database_table:
-        dict_counter[name] = (dict_counter.get(name,0) +1) 
+        dict_counter[name] = (dict_counter.get(name,0) +1)
 
     print(dict_counter)
 
@@ -171,17 +169,8 @@ def import_statistic(filename='stats_drink_name'):
         print(value,key)
 
 
-
-def display_saved_drinks():
-    with open('Choosing_drinks.txt') as f:
-        read_data = f.read()
-    if not read_data:
-        print('Empty!')
-    else:                                          
-        print(read_data)
-
 def main():
-    
+
     ui.start_menu_select()
     ui.handle_menu()
 
