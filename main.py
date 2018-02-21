@@ -70,9 +70,13 @@ def choose_drink(preference, database):
                 time.sleep(2)
                 to_save = pick_final_drink + ','
                 save_statistic_to_file(to_save)
-                main()
-            else:
-                main()
+                print ('show stat? yesss')
+                time.sleep(1)
+                import_statistic()
+
+
+            
+            
 
                
         else:
@@ -141,7 +145,33 @@ def get_titles_to_make_drink():
 #     file = open("Choosing_drinks.txt", 'a+')
 #     file.write(str(choose_drink(searched_dict)))
 
+def import_statistic(filename='stats_drink_name'):
+    database_table = []
+    dict_counter = {}
+    with open(filename) as file:
+        data = file.read().strip()
     
+    for name in data.split(','):
+        database_table.append(name)
+    database_table.pop()
+    print(database_table)
+    
+
+    for name in database_table:
+        dict_counter[name] = (dict_counter.get(name,0) +1) 
+
+    print(dict_counter)
+
+
+
+
+    print('drink history')
+
+    for value,key in dict_counter.items():
+        print(value,key)
+
+
+
 def display_saved_drinks():
     with open('Choosing_drinks.txt') as f:
         read_data = f.read()
@@ -151,6 +181,7 @@ def display_saved_drinks():
         print(read_data)
 
 def main():
+    
     ui.start_menu_select()
     ui.handle_menu()
 
