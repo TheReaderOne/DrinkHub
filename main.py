@@ -53,6 +53,12 @@ def choose_drink(preference, database):
             for ingredients in searched_dict[pick_final_drink]:
                 print(ingredients)
                 search_name = False
+            
+            answer = input("Do you want remember your choice?")
+            if answer == "yes":
+                print ("Your choises are remembered")
+                # save_choose_drink()
+                #save_choose_drink22222(searched_dict,)
         else:
             print('wrong name - try again')
 
@@ -106,6 +112,21 @@ def get_titles_to_make_drink():
     titles = ['type of alkohol', 'type of juice', 'type of syrup', 'type of fruit']
     return titles
 
+
+def save_choose_drink():
+    searched_dict = choose_drink()
+    file = open("Choosing_drinks.txt", 'a+')
+    file.write(str(choose_drink(searched_dict)))
+
+    
+    
+def display_saved_drinks():
+    with open('Choosing_drinks.txt') as f:
+        read_data = f.read()
+    if not read_data:
+        print('Empty!')
+    else:                                          
+        print(read_data)
 
 def main():
     ui.start_menu_select()

@@ -23,9 +23,11 @@ def start_menu_select():
             sys.exit()
             
 
+
 def handle_menu():
     options = ["Choose your drink",
-            "Make a drink",]
+            "Make a drink",
+            "Show Your choises"]
 
     print_menu("Options:", options, "Exit program")
     while True:
@@ -38,7 +40,9 @@ def handle_menu():
             preferences = main.get_inputs(main.get_titles_to_make_drink())
             main.make_drink(main.import_data_from_file('data_craft_drink.txt'), preferences)
 
-        elif answer == '3':
+        #elif answer == '3':
+            
+        elif answer == '4':
             os.system('clear')
             display_screen('goodbye.txt')
             sys.exit()
