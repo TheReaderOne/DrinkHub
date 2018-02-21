@@ -16,7 +16,6 @@ def import_data_from_file(filename = 'data.txt'):
             line_list = [x for x in line.strip().split(',')]
             data_temp.append(line_list)
 
-
     for data in range(0,len(data_temp),2):
         data_preferences.append(data_temp[data])
     for data in range(1,len(data_temp),2):
@@ -30,13 +29,13 @@ def import_data_from_file(filename = 'data.txt'):
     for x,y in drink_data_dict.items():
         print(x,y)
     print('\n') ############
+    
     return drink_data_dict
 
 
 def choose_drink(preference, database):
 
     searched_dict = {}
-
     recipe_index = 1
 
     for drink, drink_data in database.items():
@@ -44,14 +43,15 @@ def choose_drink(preference, database):
             recipe = drink_data[recipe_index]
             searched_dict[drink] = recipe
     print('jezeli znajdzie [easy,vodka,strong,sweet] w bazie z notatnika tworzy nowy  slownik ( dodaje do zdefiniowanego pustego) gdzie klucz to nazwa drinka a wartosc to lista ze skladnikami'   )
-    print(searched_dict)  
+    
+    for x,y in searched_dict.items() :
+        print(x,y)
     print('\n') ###########
 
     print("found drinks:" + '\n')
+
     for key in searched_dict.keys():
         print(key)
-    
-
 
     search_name = True
 
@@ -63,25 +63,37 @@ def choose_drink(preference, database):
                 print(ingredients)
                 search_name = False
             
-            answer = input("Do you want remember your choice?")
+            answer = input("Do you want remember your choice? yes/no")
             if answer == "yes":
+                time.sleep(1)
                 print ("Your choises are remembered")
-                # save_choose_drink()
-                #save_choose_drink22222(searched_dict,)
+                time.sleep(2)
+                to_save = pick_final_drink + ','
+                save_statistic_to_file(to_save)
+                main()
+            else:
+                main()
+
+               
         else:
             print('wrong name - try again')
+
+def save_statistic_to_file(name_of_drink,filename='stats_drink_name'):
+    with open (filename,'a') as file:
+        file.write(name_of_drink)
 
 
 def get_inputs(titles):
 
-    data = []
-    for parameter in titles:
-        #time.sleep(1)
-        user_input = input(parameter + '\n')
-        data.append(user_input)
-    print(data)
-    print('\n')
-    return data
+    # data = []
+    # for parameter in titles:
+    #     #time.sleep(1)
+    #     user_input = input(parameter + '\n')
+    #     data.append(user_input)
+    # print(data)
+    # print('\n')
+    ser = ['easy','vodka','strong','sweet']
+    return ser
 
 
 def get_titles():
@@ -119,7 +131,7 @@ def make_drink(drinks_dict, user_input):
 
 def get_titles_to_make_drink():
     print ('Give us your preferred ingredients')
-    time.sleep(1)
+    #time.sleep(1)
     titles = ['type of alkohol', 'type of juice', 'type of syrup', 'type of fruit']
     return titles
 
@@ -129,7 +141,6 @@ def get_titles_to_make_drink():
 #     file = open("Choosing_drinks.txt", 'a+')
 #     file.write(str(choose_drink(searched_dict)))
 
-    
     
 def display_saved_drinks():
     with open('Choosing_drinks.txt') as f:
