@@ -26,23 +26,32 @@ def import_data_from_file(filename = 'data.txt'):
     for index in range(len(data_preferences)):
         drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:],data_ingredients[index]]
 
-
+    print('tekst z notatnika jest zamieniany na to:')
+    for x,y in drink_data_dict.items():
+        print(x,y)
+    print('\n') ############
     return drink_data_dict
 
 
 def choose_drink(preference, database):
 
     searched_dict = {}
+
     recipe_index = 1
 
     for drink, drink_data in database.items():
         if preference in drink_data:
             recipe = drink_data[recipe_index]
             searched_dict[drink] = recipe
+    print('jezeli znajdzie [easy,vodka,strong,sweet] w bazie z notatnika tworzy nowy  slownik ( dodaje do zdefiniowanego pustego) gdzie klucz to nazwa drinka a wartosc to lista ze skladnikami'   )
+    print(searched_dict)  
+    print('\n') ###########
 
     print("found drinks:" + '\n')
     for key in searched_dict.keys():
         print(key)
+    
+
 
     search_name = True
 
@@ -67,15 +76,17 @@ def get_inputs(titles):
 
     data = []
     for parameter in titles:
+        #time.sleep(1)
         user_input = input(parameter + '\n')
         data.append(user_input)
-
+    print(data)
+    print('\n')
     return data
 
 
 def get_titles():
     print ('Give us your preferences')
-    time.sleep(1)
+    
     titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin, whiskey or wine? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
     return titles
@@ -113,10 +124,10 @@ def get_titles_to_make_drink():
     return titles
 
 
-def save_choose_drink():
-    searched_dict = choose_drink()
-    file = open("Choosing_drinks.txt", 'a+')
-    file.write(str(choose_drink(searched_dict)))
+# def save_choose_drink():
+#     searched_dict = choose_drink()
+#     file = open("Choosing_drinks.txt", 'a+')
+#     file.write(str(choose_drink(searched_dict)))
 
     
     
