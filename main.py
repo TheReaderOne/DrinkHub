@@ -87,7 +87,7 @@ def choose_drink(preference, database):
                 print('4. show drink-pick history')
                 print('5. return to main menu: ')
                 time.sleep(1)
-                answer = input('choose: ')
+                answer = input('choose: ' + '\n')
                 if answer == '1':
                     ml = 'ml'
 
@@ -100,12 +100,9 @@ def choose_drink(preference, database):
                         for k, v in stats_recipe.items():
                             stats_recipe[k] = v + ml
          
-
-                        # print(get_key)
-
-                        # temp_ingr_ml_table = value[1::4]
-                        # # print(temp_ingr_ml_table)
-
+                        for k,v in stats_recipe.items():
+                            print(k,v)
+                        
                 if answer == '5':
 
                     main()
