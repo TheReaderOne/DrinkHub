@@ -33,13 +33,7 @@ def import_data_from_file(filename='data.txt'):
 
     for index in range(len(data_preferences)-1):
         drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:], data_ingredients[index], data_describe[index], data_ml[index]]
-    # print(drink_data_dict)
-
-    # for k, v in drink_data_dict.items():
-    #     print(k)
-    #     print(v)
-    # for x in data_ml:
-    #     print(x)
+ 
     return drink_data_dict
 
 
@@ -54,14 +48,13 @@ def choose_drink(preference, database):
         if preference in drink_data:
             filter_dict[drink] = drink_data
 
-    print(filter_dict)
+    #print(filter_dict)
     print("found drinks:" + '\n')
     for key in filter_dict.keys():
         print(key)
 
 
     search_name = True
-
     while search_name:
         next_menu = False
         pick_final_drink = input('\nchoose drink: ')
@@ -113,6 +106,8 @@ def choose_drink(preference, database):
                     print('Pick has been saved.')
 
                  
+                if answer == '4':
+                    import_statistic()
 
                      
 
@@ -225,7 +220,10 @@ def import_statistic(filename='stats_drink_name'):
     print('drink history')
 
     for value, key in dict_counter.items():
-        print(value, key)
+        get_temp_key = str(key)
+        get_temp_value = str(value)
+        print (get_temp_value + ' was chosen ' + get_temp_key + ' times.')
+        # print(value, key)
 
 
 def display_saved_drinks():
