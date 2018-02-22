@@ -62,23 +62,25 @@ def choose_drink(preference, database):
         for key, value in filter_dict.items():
             if key == pick_final_drink:
                 picked_item_dict[key] = value
-                print(picked_item_dict)
+                #print(picked_item_dict)
                 next_menu = True
 
         if next_menu:
             return_to_main = '5'
             answer = '1'
             while return_to_main != answer:
-                print("menu:")
+                print('\nmenu:\n')
                 print('1. show ingredients')
-                print('2. show total volume of liquids')
-                print('3. save choice to database ')
-                print('4. show drink-pick history')
-                print('5. return to main menu: ')
+                print('2. display recipe')
+                print('3. show total volume of liquids')
+                print('4. save choice to database ')
+                print('5. show drink-pick history')
+                print('6. return to main menu: \n')
                 time.sleep(1)
-                answer = input('choose: ' + '\n')
+                answer = input('choose: ')
+
                 if answer == '1':
-                    ml = 'ml'
+                    print('\n')
 
                     for value in picked_item_dict.values():
                         picked_item_ingr = value[1]
@@ -87,33 +89,38 @@ def choose_drink(preference, database):
                             zip(picked_item_ingr, picked_item_ml))
 
                         for k, v in stats_recipe.items():
-                            stats_recipe[k] = v + ml
+                            stats_recipe[k] = v + 'ml'
          
                         for k,v in stats_recipe.items():
                             print(k,v)
-                        print('/n')
+                        
+
+                        # print('\n')
+                
+                if answer =='2':
+                    print('\n')
+                    values = list(picked_item_dict.values())
+                    recipe = values[0][2]
+                    print(', '.join(recipe))   
 
 
-                if answer == '2':
+                if answer == '3':
+                    print('\n')
                     calc_vol = sum(map(int,picked_item_ml))
                     print('Total volume of drink: ' + str(calc_vol) + ' ml.' )
                 
-                if answer == '3':
+                if answer == '4':
+                    print('\n')
                     for key in picked_item_dict.keys():
-                        print(key)
                         save_statistic_to_file(key)
                     time.sleep(1)
                     print('Pick has been saved.')
-
-                 
-                if answer == '4':
-                    import_statistic()
-
-                     
-
-                    
+ 
                 if answer == '5':
-
+                    print('\n')
+                    import_statistic()
+ 
+                if answer == '6':
                     main()
 
     # if answer == '1':
