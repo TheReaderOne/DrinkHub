@@ -89,20 +89,17 @@ def choose_drink(preference, database):
                 time.sleep(1)
                 answer = input('choose: ')
                 if answer == '1':
+                    ml = 'ml'
 
                     for value in picked_item_dict.values():
                         picked_item_ingr = value[1]
                         picked_item_ml = value[3]
                         stats_recipe = dict(
                             zip(picked_item_ingr, picked_item_ml))
-                        # for key in stats_recipe[value]:
-                        #     stats_recipe[key] = value + 'ml'
 
-                        # import pprint
-                        # for key,value in stats_recipe:
-                        #     print(key,value)
-
-                        print(stats_recipe)
+                        for k, v in stats_recipe.items():
+                            stats_recipe[k] = v + ml
+         
 
                         # print(get_key)
 
