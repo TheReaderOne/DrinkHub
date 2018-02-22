@@ -35,9 +35,9 @@ def import_data_from_file(filename='data.txt'):
         drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:], data_ingredients[index], data_describe[index], data_ml[index]]
     # print(drink_data_dict)
 
-    for k, v in drink_data_dict.items():
-        print(k)
-        print(v)
+    # for k, v in drink_data_dict.items():
+    #     print(k)
+    #     print(v)
     # for x in data_ml:
     #     print(x)
     return drink_data_dict
@@ -45,23 +45,20 @@ def import_data_from_file(filename='data.txt'):
 
 def choose_drink(preference, database):
 
-    filter_dick = {}
-
-    for drink, drink_data in database.items():
-        if preference in drink_data:
-            filter_dick[drink] = drink_data
-
-    print(filter_dick)
-    print("found drinks:" + '\n')
-    for key in filter_dick.keys():
-        print(key)
-    # for value in filter_dick.values():
-    #     print(value)
-    # print(filter_dick)
-
+    filter_dict = {}
     picked_item_dict = {}
     picked_item_ml = []
     picked_item_ingr = []
+
+    for drink, drink_data in database.items():
+        if preference in drink_data:
+            filter_dict[drink] = drink_data
+
+    print(filter_dict)
+    print("found drinks:" + '\n')
+    for key in filter_dict.keys():
+        print(key)
+
 
     search_name = True
 
@@ -69,7 +66,7 @@ def choose_drink(preference, database):
         next_menu = False
         pick_final_drink = input('\nchoose drink: ')
 
-        for key, value in filter_dick.items():
+        for key, value in filter_dict.items():
             if key == pick_final_drink:
                 picked_item_dict[key] = value
                 print(picked_item_dict)
@@ -82,7 +79,7 @@ def choose_drink(preference, database):
                 print("menu:")
                 print('1. show ingredients')
                 print('2. show total volume of liquids')
-                print('3. save choice ')
+                print('3. save choice to database ')
                 print('4. show drink-pick history')
                 print('5. return to main menu: ')
                 time.sleep(1)
@@ -103,18 +100,23 @@ def choose_drink(preference, database):
                             print(k,v)
                         print('/n')
 
-                        print(picked_item_ml)
 
                 if answer == '2':
-                    print(picked_item_ml)
-
                     calc_vol = sum(map(int,picked_item_ml))
-                    # for x in calc_vol:
-                    #     print(x)
-                    # vol_sum = sum(calc_vol)
                     print('Total volume of drink: ' + str(calc_vol) + ' ml.' )
-        
+                
+                if answer == '3':
+                    for key in picked_item_dict.keys():
+                        print(key)
+                        save_statistic_to_file(key)
+                    time.sleep(1)
+                    print('Pick has been saved.')
 
+                 
+
+                     
+
+                    
                 if answer == '5':
 
                     main()
@@ -140,7 +142,7 @@ def choose_drink(preference, database):
 
 def save_statistic_to_file(name_of_drink, filename='stats_drink_name'):
     with open(filename, 'a') as file:
-        file.write(name_of_drink)
+        file.write(name_of_drink + ',')
 
 
 def get_inputs(titles):
