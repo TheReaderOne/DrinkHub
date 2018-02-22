@@ -5,5 +5,62 @@ sukeu,easy,vodka,strong,sweet
 vix,hard,whiskey,soft,sour
 80ml whiskey,120ml sprite,40ml curacao syrup,lychee
 Planter's Punch,medium,rum,medium,sweet
-22ml Lime juice,30 ml Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
-
+90 ml Dark rum,22ml Lime juice,30 ml Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
+La Negra Tiene Tumbao,medium,rum,medium,sweet
+45 ml Bacardí Carta Blanca rum,7.5 ml Fernet-Vallet liqueur,60 ml Coco Lopez cream of coconut,60 ml Pineapple juice,30 ml Coconut milk
+High Horse,medium,rum,strong,spirit-forward
+45 ml Barbadian rum,15 ml Kirsch brandy,15 ml Cherry liqueur,15 ml Sweet vermouth,2 dashes Angostura bitters
+Superior Mai Tai,medium,rum,medium,sweet
+45 ml Superior rum,22 ml Orange curaçao,22 ml Lime juice,15 ml Orgeat,15 ml Black rum
+Happy Pill,medium,rum,medium,sweet
+30 ml Don Q Cristal rum,30 ml Plantation dark rum,15 ml Lime juice,22 ml Fresh orange juice,15 ml Coconut cream,30 ml Kalani coconut liqueur
+Rum & Ginger,medium,rum,medium,sweet
+7,5ml Wray & Nephew overproof rum,40 ml DR rum blend*,22 ml Fresh lime juice,1 tsp Passion fruit puree,1 dash Angostura bitters ,Blenheim ginger ale to top
+The Jacq La Ginger,medium,rum,medium,sweet
+45 ml Redlock spiced rum,60 ml Grapefruit juice,7.5 ml Brown sugar syrup,Ginger beer to top
+Phoenix Colada,medium,rum,strong,spirit-forward
+45 ml Coconut-infused Bluebird Distilling Sugarcane rum*,15 ml Bluebird Distilling Four Grain bourbon,45 ml Pineapple juice,15 ml Demerara syrup,2 dashes Bittermens Elemakule Tiki bitters,Gosling's Stormy ginger beer
+Pepin Cocktail,hard,rum,medium,sour
+60 ml Bacardi Gold Rum,15 ml Maple syrup,15 ml Lime juice,Topper of corn foam*,1 Ear of microplaned dried sweetened corn
+Lucy Colada,hard,rum,medium,spirit-forward
+75 ml White or gold rum,30 ml Cannabis-infused coconut milk*,22 ml Pineapple juice,7.5 ml Lemon juice,1 dash,1 Angostura bitters
+White Russian,easy,vodka,strong,spirit-forward
+60 ml Vodka,30 ml Kahlúa liqueur,Heavy cream
+Elyx Spritz,easy,vodka,medium,sweet
+30 ml Absolut Elyx vodka,30 ml Lillet Rose aperitif,Fever-Tree elderflower tonic water
+Palomita,easy,vodka,medium,sour
+60 ml Vodka,15 ml Fresh lime juice,Jarritos grapefruit soda
+Long Island Iced Tea,easy,vodka,strong,sour
+22 ml Gin,22 ml White rum,22 ml Silver tequila,22 ml Vodka,22 ml Triple sec,22 ml Simple syrup,22 ml Lemon juice,cola
+Celebratini,easy,vodka,medium,spirit-forward
+45 ml Celery juice,45 ml Vodka,15 ml Apple juice,15 ml Dry vermouth,1 dash Celery bitters
+Vodka Red Bull,easy,vodka,medium,sweet
+60 ml Vodka,1 Red Bull can
+Bloody Mary,hard,vodka,light,sour
+1 Lemon wedge,1 Lemon wedge,60 ml Premium Vodka,120 ml Tomato juice,2 dashes Tabasco Sauce,2 tsp Prepared horseradish,2 dashes Worcestershire sauce,1 pinch Celery salt,1 pinch Ground black pepper,1 pinch smoked paprika
+Apples & Pears,hard,vodka,medium,sour
+45 ml Stolichnaya Gala Applik Vodka,45 ml Pear juice,22 ml Vanilla-Nutmeg Syrup,15 ml Fresh lime juice,5 dashes Angostura bitters,30 ml Hard cider
+Cucumber Fizz,hard,vodka,medium,sour
+60 ml Cucumber, peeled and roughly chopped,45 ml Grey Goose La Poire flavored vodka,15 ml St-Germain elderflower liqueur,15 ml Lemon juice,15 ml Simple syrup,Lemonade or club soda
+Ginger Gin Fizz,easy,gin,light,sour
+45 ml Ginger-infused gin*, 30 ml Lemon juice,7.5 ml Lime juice,1⁄2 Simple syrup,1⁄4 Egg white,2 drops Ginger bitters,Club soda
+Gin Buck,easy,gin,medium,sweet
+45 ml Gin,Juice of half a lemon or lime,Ginger ale
+Space Gin Smash,hard,gin,light,sweet
+6  Mint leaves, quarter Lemon,2 Seedless green grapes,eighth Green apple,10 ml Simple syrup,40 ml Tanqueray gin
+Stone & CO.,hard,gin,medium,sour
+60 ml Hendrick's gin,22 ml Freshly squeezed lime,45 ml Plum syrup*,22 ml Cucumber syrup**
+South Side,hard,gin,medium,sour
+60 ml Plymouth gin,30 ml Fresh lemon juice,5 Mint leaves,30 ml Simple syrup
+Gin Buck,easy,gin,medium,sweet
+45 ml Gin,Juice of half a lemon or lime,Ginger ale
+The Purple One,medium,gin,medium,spirit-forward
+45 ml Vivacity Native Gin,22 ml Lime juice,7.5 ml Simple syrup,15 ml Carpano Bianco Vermouth,22 ml Fermented Concord grape soda
+Whiskey Smash,medium,whiskey,medium,sour
+half Lemon cut into wedges,4 Mint leaves,22 ml Simple syrup,60 ml Elijah Craig 12-Year-Old Bourbon
+Hot Toddy,medium,whiskey,medium,sour
+Boiling water to fill a mug,4 Cloves,1 Lemon twist,2 tsp Demerara sugar or brown sugar,7.5 ml Fresh lemon juice,60 ml whiskey or scotch
+Rumskey,easy,whiskey,light,sweet
+45 ml Whiskey,30 ml Lemon juice,15 ml Ginger liqueur,22 ml Simple syrup
+Old Fashioned,medium,whiskey,medium,sour
+4 dashes Angostura bitters,1 tsp Sugar,1 Orange wheel,1 Maraschino cherry,1 Club soda,60 ml Whiskey
