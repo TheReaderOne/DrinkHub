@@ -32,9 +32,14 @@ def import_data_from_file(filename='data.txt'):
         data_ml.append(data_temp[symbol_index])
 
     for index in range(len(data_preferences)-1):
-        drink_data_dict[data_preferences[index][0]] = [data_preferences[index]
-                                                       [1:], data_ingredients[index], data_describe[index], data_ml[index]]
+        drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:], data_ingredients[index], data_describe[index], data_ml[index]]
+    # print(drink_data_dict)
 
+    for k, v in drink_data_dict.items():
+        print(k)
+        print(v)
+    # for x in data_ml:
+    #     print(x)
     return drink_data_dict
 
 
@@ -140,15 +145,17 @@ def get_inputs(titles):
     #     user_input = input(parameter + '\n')
     #     data.append(user_input)
     # print(data)
-    # print('\n')
-    ser = ['easy', 'vodka', 'strong', 'sweet']
+    # print('\n'),
+
+    ser = ['hard', 'vodka', 'medium', 'sour']
+    
     return ser
 
 
 def get_titles():
-    print('Give us your preferences')
+    print ('Give us your preferences')
 
-    titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin, whiskey or wine? ',
+    titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin or whiskey? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
     return titles
 
@@ -225,6 +232,8 @@ def display_saved_drinks():
 def main():
     # import_data_from_file()
     test = ['easy', 'vodka', 'strong', 'sweet']
+
+    #test = ['hard', 'vodka', 'medium', 'sour']
     choose_drink(test, import_data_from_file())
     # ui.start_menu_select()
     # ui.handle_menu()

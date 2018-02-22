@@ -21,7 +21,7 @@ def start_menu_select():
             os.system('clear')
             display_screen('goodbye.txt')
             sys.exit()
-            
+
 
 
 def handle_menu():
@@ -40,8 +40,9 @@ def handle_menu():
             preferences = main.get_inputs(main.get_titles_to_make_drink())
             main.make_drink(main.import_data_from_file('data_craft_drink.txt'), preferences)
 
-        #elif answer == '3':
-            
+        elif answer == '3':
+            main.import_statistic(filename='stats_drink_name')
+
         elif answer == '4':
             os.system('clear')
             display_screen('goodbye.txt')
@@ -52,7 +53,7 @@ def print_menu(title, list_options, exit_message):
     print(title)
     for index, value in enumerate(list_options, 1):
         print("\t({}) {}".format(index, value))
-    print("\t(3) {}".format(exit_message))
+    print("\t(4) {}".format(exit_message))
 
 def display_screen(filename):
     with open(filename) as f:

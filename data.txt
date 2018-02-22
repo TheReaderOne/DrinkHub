@@ -11,6 +11,7 @@ twardzik,amarena,sranie w banie,pomidory
 VIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIX
 80,120,40
 Planter's Punch,medium,rum,medium,sweet
+<<<<<<< HEAD
 Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
 planterrrplanterrrplanterrrplanterrrplanterrrplanterrr
 22,30
