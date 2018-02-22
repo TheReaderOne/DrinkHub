@@ -1,9 +1,24 @@
 cosmo,easy,vodka,strong,sweet
-40ml vodka,200ml orange juice,50ml grenadine syrup
+vodka,orange juice,grenadine syrup
+cosmocosmocosmocosmocosmocosmocosmocosmocosmo
+40,200,50
 sukeu,easy,vodka,strong,sweet
-80ml whiskey,120ml sprite,40ml curacao syrup,lychee
+whiskey,sprite,curacao syrup,lychee
+sukeusukeusukeusukeusukeusukeusukeusukeusukeusukeu
+80,190,40
 vix,hard,whiskey,soft,sour
-80ml whiskey,120ml sprite,40ml curacao syrup,lychee
+twardzik,amarena,sranie w banie,pomidory
+VIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIX
+80,120,40
 Planter's Punch,medium,rum,medium,sweet
-22ml Lime juice,30 ml Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
-
+Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
+planterrrplanterrrplanterrrplanterrrplanterrrplanterrr
+22,30
+kolejnydrineczek,medium,rum,medium,sweet
+Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
+planterrrplanterrrplanterrrplanterrrplanterrrplanterrr
+2223,234
+ENDENDENDENDENDENDENDENDENDENDENDENDENDENDENDEND
+ENDENDENDENDENDENDENDENDENDENDENDENDENDENDENDEND
+ENDENDENDENDENDENDENDENDENDENDENDENDENDENDENDEND
+ENDENDENDENDNEDNEDNENDNEDNENDNEDNENDNEDNENDNEDNE
