@@ -1,0 +1,122 @@
+Planter's Punch,medium,rum,medium,sweet
+Dark rum,Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
+Add all the ingredients into a shaker with ice, and shake vigorously. Strain into a Collins glass over crushed ice. Top with a splash of soda water. Garnish with a mint sprig.
+90,22,30
+La Negra Tiene Tumbao,medium,rum,medium,sweet
+Bacardí Carta Blanca rum,Fernet-Vallet liqueur,Coco Lopez cream of coconut,Pineapple juice,Coconut milk
+Add all the ingredients into a blender with ice and blend. Pour into a large stemless wine glass. Garnish with a pineapple leaf.
+45,7.5,60,60,30
+High Horse,medium,rum,strong,spirit-forward
+Barbadian rum,Kirsch brandy,Cherry liqueur,Sweet vermouth,2 dashes Angostura bitters
+Add all the ingredients into a mixing glass with ice and stir. Strain into a Martini glass. Garnish with a brandied cherry.
+Superior Mai Tai|Add the BACARDÍ Superior rum, curaçao, juice and orgeat into a shaker with crushed ice and shake lightly (about 3 seconds). Pour into a double Old Fashioned glass, then float the BACARDÍ Black rum. Garnish with a lime wheel and mint sprig.
+45,15,15,15
+Superior Mai Tai,medium,rum,medium,sweet
+Superior rum,Orange curaçao,Lime juice,Orgeat,Black rum
+Add the BACARDÍ Superior rum, curaçao, juice and orgeat into a shaker with crushed ice and shake lightly (about 3 seconds).Pour into a double Old Fashioned glass, then float the BACARDÍ Black rum.Garnish with a lime wheel and mint sprig.
+45,22,22,15,15
+Happy Pill,medium,rum,medium,sweet
+Don Q Cristal rum,Plantation dark rum,Lime juice,Fresh orange juice,Coconut cream,Kalani coconut liqueur
+Add all the ingredients into a shaker with ice and shake. Pour into a metal cup or highball over crushed ice. Garnish with a skewered cherry and orange slice. Dust with fresh grated nutmeg.
+30,30,15,22,15,30
+Rum & Ginger,medium,rum,medium,sweet
+Wray & Nephew overproof rum,DR rum blend*,Fresh lime juice,1 tsp Passion fruit puree,1 dash Angostura bitters ,Blenheim ginger ale to top
+Pour the rum, rum blend, juice, puree and bitters into a Collins glass over ice. Top with the ginger ale. *DR rum blend: Combine 4 parts Bacardí Superior Heritage Limited Edition rum, 3 parts Caña Brava rum, 2 parts Barbancourt white rhum agricole and 1 part Banks 5 Island rum.
+7.5,40,22,
+The Jacq La Ginger,medium,rum,medium,sweet
+Redlock spiced rum,Grapefruit juice,Brown sugar syrup,Ginger beer to top
+Add the rum, juice and syrup into a shaker with ice, and shake until well-chilled. Strain into a Collins glass over fresh ice, and stir gently. Top with the ginger beer. Garnish with a dill sprig.
+45,60,7.5,
+Phoenix Colada,medium,rum,strong,spirit-forward
+Coconut-infused Bluebird Distilling Sugarcane rum*,Bluebird Distilling Four Grain bourbon,Pineapple juice,Demerara syrup,2 dashes Bittermens Elemakule Tiki bitters,Gosling's Stormy ginger beer
+Add the rum, bourbon, juice, syrup and bitters into a shaker with ice, and shake until well-chilled. Strain into a Collins glass over fresh ice. Top with the ginger beer. Garnish with 2 pineapple fronds and freshly grated nutmeg. *Coconut-infused rum: Combine 1 750mL bottle of Bluebird Distilling Sugarcane rum and 4 cups flaked coconut in a nonreactive container like a large Mason jar. Let it set for 4 days, then strain out solids through a fine-mesh strainer.
+45,15,45,15
+Pepin Cocktail,hard,rum,medium,sour
+Bacardi Gold Rum,Maple syrup,Lime juice,Topper of corn foam*,1 Ear of microplaned dried sweetened corn
+Shake all of the ingredients, strain, and top with the corn foam. *Corn foam: Make 8 cups of simple syrup, add two pre-boiled corn cobs, and let it rest at medium heat for about 1 hour. Strain and add two leaves of gelatin. Pour into a cream siphon, and add 2 cream chargers. Let it sit in the fridge for 1 hour.
+60,15,15
+Lucy Colada,hard,rum,medium,spirit-forward
+White or gold rum,Cannabis-infused coconut milk*,Pineapple juice,Lemon juice,1 dash,1 Angostura bitters
+Add the rum, cannabis-infused coconut milk, pineapple and lemon juice into a shaker and fill with ice. Shake well and strain into a rocks filled with fresh ice. Garnish with a pineapple wedge and serve. *Cannabis-infused coconut milk: After decarbing your cannabis, warm one 13.5-oz. can of coconut milk into a pan over low heat. Slowly stir 1 gram of cannabis into the coconut milk and let simmer for 45 minutes. Strain with a cheesecloth into a bowl or bottle.
+75,30,22,7.5
+White Russian,easy,vodka,strong,spirit-forward
+Vodka,Kahlúa liqueur,Heavy cream
+Add the vodka and Kahlúa to an Old Fashioned glass filled with ice. Top with a large splash of heavy cream and stir.
+60,30
+Elyx Spritz,easy,vodka,medium,sweet
+Absolut Elyx vodka,Lillet Rose aperitif,Fever-Tree elderflower tonic water
+Add the vodka and aperitif to a Highball glass filled with ice. Top with the tonic, and stir gently. Garnish with a lemon wheel.
+30,30
+Palomita,easy,vodka,medium,sour
+Vodka,Fresh lime juice,Jarritos grapefruit soda
+Rim a Collins glass with vanilla-flecked salt. Add the vodka and lime juice to a shaker with ice and shake. Strain into the prepared glass over fresh ice. Top with the soda. Garnish with a lemon peel.
+60,15
+Long Island Iced Tea,easy,vodka,strong,sour
+Gin,White rum,Silver tequila,Vodka,Triple sec,Simple syrup,Lemon juice,cola
+Fill a highball or hurricane glass with ice and add all the ingredients except the cola. Top with a splash of cola and stir briefly. Garnish with a lemon wedge.
+22,22,22,22,22,22,22
+Celebratini,easy,vodka,medium,spirit-forward
+Celery juice,Vodka,Apple juice,Dry vermouth,1 dash Celery bitters
+Add all the ingredients into a mixing glass with ice and stir. Strain into a Martini glass, and garnish with a celery frond.
+45,45,15,15
+Vodka Red Bull,easy,vodka,medium,sweet
+Vodka,1 Red Bull can
+Add all of the ingredients to a highball glass over ice and stir.
+60
+Bloody Mary,hard,vodka,light,sour
+Premium Vodka,Tomato juice,1 Lemon wedge,1 Lemon wedge,2 dashes Tabasco Sauce,2 tsp Prepared horseradish,2 dashes Worcestershire sauce,1 pinch Celery salt,1 pinch Ground black pepper,1 pinch smoked paprika
+Pour some celery salt onto a small plate. Rub the juicy side of the lemon or lime wedge along the lip of a pint glass.
+Roll the outer edge of the glass in celery salt until fully coated. Fill with ice and set aside. Squeeze the lemon and lime wedges into a shaker and drop them in. Add the remaining ingredients and fill with ice. Shake gently and strain into the prepared glass. Garnish with a celery stalk and a lime wedge.
+60,120
+Apples & Pears,hard,vodka,medium,sour
+Stolichnaya Gala Applik Vodka,Pear juice,Vanilla-Nutmeg Syrup,Fresh lime juice,Hard cider,5 dashes Angostura bitters
+Add all the ingredients except the cider to a shaker and fill with ice. Shake well and strain into a double Old Fashioned glass filled with fresh ice. Top with the cider and garnish with an apple slice and a sprinkle of grated nutmeg.
+45,45,22,15,30
+Cucumber Fizz,hard,vodka,medium,sour
+Cucumber, peeled and roughly chopped,Grey Goose La Poire flavored vodka,St-Germain elderflower liqueur,Lemon juice,Simple syrup,Lemonade or club soda
+In a shaker, muddle the cucumber. Add the vodka, St-Germain, lemon juice and simple syrup, and fill with ice. Shake vigorously and strain into a highball glass filled with fresh ice. Garnish with mint, cucumber slices and lemon zest and top with lemonade or club soda.
+60,45,15,15,15,15
+Ginger Gin Fizz,easy,gin,light,sour
+Ginger-infused gin*,Lemon juice,Lime juice,1⁄2 Simple syrup,1⁄4 Egg white,2 drops Ginger bitters,Club soda
+Shake the gin, lemon and lime juices, simple syrup, egg white and bitters with ice, strain and serve in highball glass with 2 ice cubes. Fill with club soda. Garnish with an orange peel and 2 bendy straws. *Ginger-infused gin: In a clear glass jar with an air-tight lid, combine 1/4 cup sliced ginger and 3 cups gin. Allow to sit for 2 weeks in a cool, dry place, then strain into a clean bottle. Store in the refrigerator for up to 2 weeks.
+45,30,7.5
+Gin Buck,easy,gin,medium,sweet
+Gin,Juice of half a lemon or lime,Ginger ale
+Fill a Collins glass with ice and add the gin and lemon or lime juice. Fill with ginger ale and stir briefly. Garnish with a lemon or lime wedge.
+45
+Space Gin Smash,hard,gin,light,sweet
+Tanqueray gin,Simple syrup,6  Mint leaves, quarter Lemon,2 Seedless green grapes,eighth Green apple
+In a shaker, muddle the mint, lemon, grapes, apple and simple syrup. Add the gin and fill with ice. Shake, and strain into a rocks glass filled with fresh cracked ice. Garnish with an apple fan, a mint sprig and a grape.
+40,10
+Stone & CO.,hard,gin,medium,sour
+Hendrick's gin,Freshly squeezed lime,Plum syrup*,Cucumber syrup**
+Add all of the ingredients to a blender, and blend until smooth. Garnish with a cucumber wheel. *Plum syrup: Chop 12 plums, removing seeds. Add 12 cups of water and 12 cups of sugar to a pot. Once the sugar dissolves, add the plums and bring to a boil. After it reaches a boil, turn the heat down and let it simmer, for approximately 2 hours, until the plums are soft. Strain out the plums and transfer to a bottle with a second strain. **Cucumber syrup: Follow the same steps as the plum syrup but using 8 cucumbers instead.
+60,22,45,22
+South Side,hard,gin,medium,sour
+Plymouth gin,Fresh lemon juice,Simple syrup,5 Mint leaves
+In a shaker, gently muddle the mint and lemon juice. Add the remaining ingredients and fill with ice. Shake, and strain into a chilled Martini glass. Garnish with a mint sprig or lemon twist.
+60,30,30
+Gin Buck,easy,gin,medium,sweet
+Gin,Juice of half a lemon or lime,Ginger ale
+Fill a Collins glass with ice and add the gin and lemon or lime juice. Fill with ginger ale and stir briefly. Garnish with a lemon or lime wedge.
+45
+The Purple One,medium,gin,medium,spirit-forward
+Vivacity Native Gin,Lime juice,Simple syrup,Carpano Bianco Vermouth,Fermented Concord grape soda
+Add all ingredients to a shaker and fill with ice. Shake, and strain into a Martini glass. Top with .75 to 1 ounce Concord grape soda.
+45,22,7.5,15,22
+Whiskey Smash,medium,whiskey,medium,sour
+Simple syrup,Elijah Craig 12-Year-Old Bourbon,half Lemon cut into wedges,4 Mint leaves,
+In a shaker, muddle the lemon. Add the remaining ingredients and fill with ice. Shake, and double-strain into a rocks glass filled with crushed ice or one large ice chunk. Slap a mint sprig between your hands and use as garnish. Serve with a straw.
+22,60
+Hot Toddy,medium,whiskey,medium,sour
+whiskey or scotch,Fresh lemon juice,Boiling water to fill a mug,4 Cloves,1 Lemon twist,2 tsp Demerara sugar or brown sugar
+Fill a mug with boiling water and let stand for a minute or two to warm. Meanwhile, stick the cloves into the lemon twist and set aside. Empty the mug and fill about halfway with fresh boiling water. Add the sugar and stir to dissolve. Add the prepared lemon twist and stir. Add the lemon juice and whiskey, and stir again.
+60,7.5
+Rumskey,easy,whiskey,light,sweet
+Whiskey,Lemon juice,Ginger liqueur,imple syrup
+Add all ingredients to a shaker and fill with ice. Shake, and double strain into a highball glass over fresh ice. Garnish with a lemon peel.
+45,30,15,22
+Old Fashioned,medium,whiskey,medium,sour
+60 ml Whiskey,4 dashes Angostura bitters,1 tsp Sugar,1 Orange wheel,1 Maraschino cherry,1 Club soda
+In an Old Fashioned glass, muddle the bitters, sugar, orange wheel, cherry and a splash of soda. Remove the orange rind, add the bourbon and fill with ice. Garnish with a fresh orange wheel and cherry.
+60
