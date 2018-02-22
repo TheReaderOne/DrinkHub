@@ -73,7 +73,6 @@ def choose_drink(preference, database):
             if key == pick_final_drink:
                 picked_item_dict[key] = value
                 print(picked_item_dict)
-
                 next_menu = True
 
         if next_menu:
@@ -82,7 +81,7 @@ def choose_drink(preference, database):
             while return_to_main != answer:
                 print("menu:")
                 print('1. show ingredients')
-                print('2. drunk calculator')
+                print('2. show total volume of liquids')
                 print('3. save choice ')
                 print('4. show drink-pick history')
                 print('5. return to main menu: ')
@@ -102,7 +101,20 @@ def choose_drink(preference, database):
          
                         for k,v in stats_recipe.items():
                             print(k,v)
-                        
+                        print('/n')
+
+                        print(picked_item_ml)
+
+                if answer == '2':
+                    print(picked_item_ml)
+
+                    calc_vol = sum(map(int,picked_item_ml))
+                    # for x in calc_vol:
+                    #     print(x)
+                    # vol_sum = sum(calc_vol)
+                    print('Total volume of drink: ' + str(calc_vol) + ' ml.' )
+        
+
                 if answer == '5':
 
                     main()
