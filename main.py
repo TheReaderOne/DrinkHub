@@ -63,9 +63,59 @@ def choose_drink(preference, database):
     while search_name:
         next_menu = False
 
+<<<<<<< HEAD
         print("found drinks:" + '\n')
         for key in filter_dict.keys():
             print(key)
+=======
+        for key, value in filter_dict.items():
+            if key == pick_final_drink:
+                picked_item_dict[key] = value
+                next_menu = True
+
+        if next_menu:
+            return_to_main = '6'
+            answer = '1'
+            while return_to_main != answer:
+                print_sub_menu()
+                time.sleep(1)
+                answer = input('choose: ')
+
+                if answer == '1':
+                    print('\n')
+
+                    for value in picked_item_dict.values():
+                        picked_item_ingr = value[1]
+                        picked_item_ml = value[3]
+                        stats_recipe = dict(
+                            zip(picked_item_ingr, picked_item_ml))
+
+                        for k, v in stats_recipe.items():
+                            stats_recipe[k] = v + 'ml'
+
+                        for k, v in stats_recipe.items():
+                            print(k, v)
+
+                if answer == '2':
+                    data_index = 0
+                    recipe_index = 2
+                    print('\n')
+                    values = list(picked_item_dict.values())
+                    recipe = values[data_index][recipe_index]
+                    print(', '.join(recipe))
+
+                if answer == '3':
+                    print('\n')
+                    calc_vol = sum(map(int, picked_item_ml))
+                    print('Total volume of drink: ' + str(calc_vol) + ' ml.')
+
+                if answer == '4':
+                    print('\n')
+                    for key in picked_item_dict.keys():
+                        save_statistic_to_file(key)
+                    time.sleep(1)
+                    print('Pick has been saved.')
+>>>>>>> 7325b9d2cf8eeb1c584a7cee9ff2aecd25a9bebc
 
         pick_final_drink = input('\nchoose drink: ')
         if pick_final_drink in filter_dict.keys():
@@ -126,8 +176,13 @@ def choose_drink(preference, database):
                         print('\n')
                         import_statistic()
 
+<<<<<<< HEAD
         else:
             print('\nWrong paramter - try again\n')
+=======
+                if answer == '6':
+                    ui.handle_menu()
+>>>>>>> 7325b9d2cf8eeb1c584a7cee9ff2aecd25a9bebc
 
 
 def save_statistic_to_file(name_of_drink, filename='stats_drink_name'):
