@@ -127,19 +127,14 @@ def get_inputs(titles):
 
     data = []
     for parameter in titles:
-        #time.sleep(1)
         user_input = input(parameter + '\n')
         data.append(user_input)
-    print(data)
-    print('\n'),
-
-    # ser = ['hard', 'vodka', 'medium', 'sour']
 
     return data
 
 
 def get_titles():
-    print('Give us your preferences')
+    print('Give us your preferences'+ '\n')
 
     titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin or whiskey? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
@@ -174,7 +169,6 @@ def make_drink(drinks_dict, user_input):
 def get_titles_to_make_drink():
 
     print('Give us your preferred ingredients')
-    #
     titles = ['type of alkohol', 'type of juice',
               'type of syrup', 'type of fruit']
     return titles
@@ -189,14 +183,11 @@ def import_statistic(filename='stats_drink_name'):
     for name in data.split(','):
         database_table.append(name)
     database_table.pop()
-    print(database_table)
 
     for name in database_table:
         dict_counter[name] = dict_counter.get(name, 0) + 1
 
-    print(dict_counter)
-
-    print('drink history')
+    print('Your drink history:'+ '\n')
 
     for value, key in dict_counter.items():
         get_temp_key = str(key)
@@ -204,21 +195,7 @@ def import_statistic(filename='stats_drink_name'):
         print(get_temp_value + ' was chosen ' + get_temp_key + ' times.')
 
 
-def display_saved_drinks():
-    with open('Choosing_drinks.txt') as f:
-        read_data = f.read()
-    if not read_data:
-        print('Empty!')
-    else:
-        print(read_data)
-
-
 def main():
-    # import_data_from_file()
-    # test = ['easy', 'vodka', 'strong', 'sweet']
-
-    #test = ['hard', 'vodka', 'medium', 'sour']
-
     ui.start_menu_select()
     ui.handle_menu()
     choose_drink(get_inputs(get_titles()), import_data_from_file())

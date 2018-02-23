@@ -15,7 +15,7 @@ DDD:::::DDDDD:::::D                                              k::::::k       
 DDD:::::DDDDD:::::D   r:::::r           i::::::i n::::n    n::::nk::::::k k:::::k   HH::::::H     H::::::HHu:::::::::::::::uub:::::bbbbbb::::::b
 D:::::::::::::::DD    r:::::r           i::::::i n::::n    n::::nk::::::k  k:::::k  H:::::::H     H:::::::H u:::::::::::::::ub::::::::::::::::b 
 D::::::::::::DDD      r:::::r           i::::::i n::::n    n::::nk::::::k   k:::::k H:::::::H     H:::::::H  uu::::::::uu:::ub:::::::::::::::b  
-DDDDDDDDDDDDD         rrrrrrr           iiiiiiii nnnnnn    nnnnnnkkkkkkkk    kkkkkkkHHHHHHHHH     HHHHHHHHH    uuuuuuuu  uuuubbbbbbbbbbbbbbbb   
+DDDDDDDDDDDDD         rrrrrrr           iiiiiiii nnnnnn    nnnnnnkkkkkkkk    kkkkkkkHHHHHHHHH     HHHHHHHHH    uuuuuuuu  uuuubbbbbbbbbbbbbbbb   ver 1.0a
                                                                                                                                                 
 
   __      _____ _             _     _____       _       _    _    _       _     
