@@ -15,7 +15,7 @@ def start_menu_select():
         elif answer == '2':
             os.system('clear')
             display_screen('about.txt')
-            input('\nPress enter key to go back')
+            input('\nPress any key to go back')
 
         elif answer == '3':
             os.system('clear')
