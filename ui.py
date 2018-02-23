@@ -32,12 +32,16 @@ def handle_menu():
     while True:
         answer = input()
         if answer == '1':
-            preference = main.get_inputs(main.get_titles())
+            preference = main.get_inputs(main.get_titles(),main.import_data_from_file())
             main.choose_drink(preference,main.import_data_from_file())
 
         elif answer == '2':
-            preferences = main.get_inputs(main.get_titles_to_make_drink())
-            main.make_drink(main.import_data_from_file('data_craft_drink.txt'), preferences)
+            
+            # preferences = main.get_inputs(main.get_titles_to_make_drink())
+            pref = main.ingr_input()
+            main.search_drink_by_ingredients(main.import_data_from_file(),pref)
+
+            # main.make_drink(main.import_data_from_file('data_craft_drink.txt'), preferences)
 
         elif answer == '3':
             main.import_statistic(filename='stats_drink_name')
