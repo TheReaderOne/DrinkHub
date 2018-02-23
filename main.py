@@ -5,17 +5,6 @@ import time
 
 
 
-def print_sub_menu():
-    print('\nmenu:\n')
-    print('1. show ingredients')
-    print('2. display recipe')
-    print('3. show total volume of liquids')
-    print('4. save choice to database ')
-    print('5. show drink-pick history')
-    print('6. return to main menu: ')
-    print('7. return to submenu: \n')
-
-
 def import_data_from_file(filename='data.txt'):
 
     data_temp = []
@@ -81,12 +70,12 @@ def choose_drink(preference, database):
                 return_to_main = '7'
                 answer = '1'
                 while return_to_main != answer:
-                    print_sub_menu()
+                    ui.print_sub_menu()
                     time.sleep(1)
                     answer = input('choose: ')
 
                     if answer == '6':
-                        main()
+                        ui.handle_menu()
 
                     if answer == '1':
                         print('\n')

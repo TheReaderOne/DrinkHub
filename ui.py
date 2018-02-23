@@ -72,9 +72,20 @@ def handle_menu():
             time.sleep(2)
             print_vac_table()
             
-
         if answer == '5':
             main.main()
+
+
+def print_sub_menu():
+    print('\nmenu:\n')
+    print('1. show ingredients')
+    print('2. display recipe')
+    print('3. show total volume of liquids')
+    print('4. save choice to database ')
+    print('5. show drink-pick history')
+    print('6. return to main menu: ')
+    print('7. return to submenu: \n')
+
     
 def print_vac_table():
     print('BAC Chart Values') 
@@ -93,10 +104,9 @@ def print_menu(title, list_options):
     for index, value in enumerate(list_options,1):
         print("({}) {}\n".format(index, value))
 
+
 def display_screen(filename):
     with open(filename) as f:
         read_data = f.read()
     print(read_data)
 
-def print_error_message(message):
-    print(message)
