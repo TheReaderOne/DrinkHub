@@ -32,8 +32,9 @@ def import_data_from_file(filename='data.txt'):
         data_ml.append(data_temp[symbol_index])
 
     for index in range(len(data_preferences)-1):
-        drink_data_dict[data_preferences[index][0]] = [data_preferences[index][1:], data_ingredients[index], data_describe[index], data_ml[index]]
- 
+        drink_data_dict[data_preferences[index][0]] = [data_preferences[index]
+                                                       [1:], data_ingredients[index], data_describe[index], data_ml[index]]
+
     return drink_data_dict
 
 
@@ -48,11 +49,9 @@ def choose_drink(preference, database):
         if preference in drink_data:
             filter_dict[drink] = drink_data
 
-    #print(filter_dict)
     print("found drinks:" + '\n')
     for key in filter_dict.keys():
         print(key)
-
 
     search_name = True
     while search_name:
@@ -62,7 +61,6 @@ def choose_drink(preference, database):
         for key, value in filter_dict.items():
             if key == pick_final_drink:
                 picked_item_dict[key] = value
-                #print(picked_item_dict)
                 next_menu = True
 
         if next_menu:
@@ -90,56 +88,34 @@ def choose_drink(preference, database):
 
                         for k, v in stats_recipe.items():
                             stats_recipe[k] = v + 'ml'
-         
-                        for k,v in stats_recipe.items():
-                            print(k,v)
-                        
 
-                        # print('\n')
-                
-                if answer =='2':
+                        for k, v in stats_recipe.items():
+                            print(k, v)
+
+                if answer == '2':
                     print('\n')
                     values = list(picked_item_dict.values())
                     recipe = values[0][2]
-                    print(', '.join(recipe))   
-
+                    print(', '.join(recipe))
 
                 if answer == '3':
                     print('\n')
-                    calc_vol = sum(map(int,picked_item_ml))
-                    print('Total volume of drink: ' + str(calc_vol) + ' ml.' )
-                
+                    calc_vol = sum(map(int, picked_item_ml))
+                    print('Total volume of drink: ' + str(calc_vol) + ' ml.')
+
                 if answer == '4':
                     print('\n')
                     for key in picked_item_dict.keys():
                         save_statistic_to_file(key)
                     time.sleep(1)
                     print('Pick has been saved.')
- 
+
                 if answer == '5':
                     print('\n')
                     import_statistic()
- 
+
                 if answer == '6':
                     main()
-
-    # if answer == '1':
-    #     for index in range(show_ml_recipe_table):
-    #         ml = show_ml_recipe_table[index]
-
-    # answer = input("Do you want remember your choice? yes/no")
-    # if answer == "yes":
-    #     time.sleep(1)
-    #     print ("Your choises are remembered")
-    #     time.sleep(2)
-    #     to_save = pick_final_drink + ','
-    #     save_statistic_to_file(to_save)
-    #     print ('show stat? yesss')
-    #     time.sleep(1)
-    #     import_statistic()
-
-    #     else:
-    #         print('wrong name - try again')
 
 
 def save_statistic_to_file(name_of_drink, filename='stats_drink_name'):
@@ -149,21 +125,21 @@ def save_statistic_to_file(name_of_drink, filename='stats_drink_name'):
 
 def get_inputs(titles):
 
-    # data = []
-    # for parameter in titles:
-    #     #time.sleep(1)
-    #     user_input = input(parameter + '\n')
-    #     data.append(user_input)
-    # print(data)
-    # print('\n'),
+    data = []
+    for parameter in titles:
+        #time.sleep(1)
+        user_input = input(parameter + '\n')
+        data.append(user_input)
+    print(data)
+    print('\n'),
 
-    ser = ['hard', 'vodka', 'medium', 'sour']
-    
-    return ser
+    # ser = ['hard', 'vodka', 'medium', 'sour']
+
+    return data
 
 
 def get_titles():
-    print ('Give us your preferences')
+    print('Give us your preferences')
 
     titles = ['easy, medium or hard to prepare? ', 'main ingredient is: vodka, rum, gin or whiskey? ',
               'light, medium or strong? ', 'sweet or sour taste? ']
@@ -196,17 +172,13 @@ def make_drink(drinks_dict, user_input):
 
 
 def get_titles_to_make_drink():
+
     print('Give us your preferred ingredients')
-    #time.sleep(1)
+    #
     titles = ['type of alkohol', 'type of juice',
               'type of syrup', 'type of fruit']
     return titles
 
-
-# def save_choose_drink():
-#     searched_dict = choose_drink()
-#     file = open("Choosing_drinks.txt", 'a+')
-#     file.write(str(choose_drink(searched_dict)))
 
 def import_statistic(filename='stats_drink_name'):
     database_table = []
@@ -229,8 +201,7 @@ def import_statistic(filename='stats_drink_name'):
     for value, key in dict_counter.items():
         get_temp_key = str(key)
         get_temp_value = str(value)
-        print (get_temp_value + ' was chosen ' + get_temp_key + ' times.')
-        # print(value, key)
+        print(get_temp_value + ' was chosen ' + get_temp_key + ' times.')
 
 
 def display_saved_drinks():
@@ -244,12 +215,13 @@ def display_saved_drinks():
 
 def main():
     # import_data_from_file()
-    test = ['easy', 'vodka', 'strong', 'sweet']
+    # test = ['easy', 'vodka', 'strong', 'sweet']
 
     #test = ['hard', 'vodka', 'medium', 'sour']
-    choose_drink(test, import_data_from_file())
-    # ui.start_menu_select()
-    # ui.handle_menu()
+
+    ui.start_menu_select()
+    ui.handle_menu()
+    choose_drink(get_inputs(get_titles()), import_data_from_file())
 
 
 if __name__ == '__main__':
