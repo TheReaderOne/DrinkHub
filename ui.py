@@ -2,21 +2,12 @@
 import os
 import main
 import sys
-import time
 
 def start_menu_select():
     while True:
         os.system('clear')
-        display_screen('start_screen1.txt')
-        answer = input('Are you over 18 years old?  yes/no: ' + '\n')
-        if answer == "yes":
-            display_screen('start_screen.txt')
-            answer = input("Choose option :" + '\n')
-        else:
-            print ('It will be better if you drink Fanta!')
-            time.sleep(1)
-            display_screen('goodbye.txt')
-            sys.exit()
+        display_screen('start_screen.txt')
+        answer = input("Choose option : ")
 
         if answer == '1':
             break
@@ -24,20 +15,20 @@ def start_menu_select():
         elif answer == '2':
             os.system('clear')
             display_screen('about.txt')
-            input('\nPress enter key to go back')
+            input('\nPress any key to go back')
 
         elif answer == '3':
             os.system('clear')
             display_screen('goodbye.txt')
             sys.exit()
-            
+
 
 def handle_menu():
     options = ["Choose your drink",
             "Make a drink",
-            "Fast sobriety test",]
+            "Show Your choises"]
 
-    print_menu("Options:" + '\n', options, "Exit program")
+    print_menu("Options:", options, "Exit program")
     while True:
         answer = input()
         if answer == '1':
@@ -49,11 +40,7 @@ def handle_menu():
             main.make_drink(main.import_data_from_file('data_craft_drink.txt'), preferences)
 
         elif answer == '3':
-            os.system('clear')
-            display_screen('test.txt')
-            time.sleep(3)
-            display_screen('goodbye.txt')
-            sys.exit()
+            main.import_statistic(filename='stats_drink_name')
 
         elif answer == '4':
             os.system('clear')
@@ -72,6 +59,5 @@ def display_screen(filename):
         read_data = f.read()
     print(read_data)
 
-
-#def print_error_message(message):
- #   print(message)
+def print_error_message(message):
+    print(message)

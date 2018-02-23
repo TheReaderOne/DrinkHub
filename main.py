@@ -3,6 +3,14 @@ import os
 import ui
 import time
 
+def print_sub_menu ():
+    print('\nmenu:\n')
+    print('1. show ingredients')
+    print('2. display recipe')
+    print('3. show total volume of liquids')
+    print('4. save choice to database ')
+    print('5. show drink-pick history')
+    print('6. return to main menu: \n')
 
 def import_data_from_file(filename='data.txt'):
 
@@ -67,13 +75,7 @@ def choose_drink(preference, database):
             return_to_main = '6'
             answer = '1'
             while return_to_main != answer:
-                print('\nmenu:\n')
-                print('1. show ingredients')
-                print('2. display recipe')
-                print('3. show total volume of liquids')
-                print('4. save choice to database ')
-                print('5. show drink-pick history')
-                print('6. return to main menu: \n')
+                print_sub_menu()
                 time.sleep(1)
                 answer = input('choose: ')
 
@@ -93,9 +95,11 @@ def choose_drink(preference, database):
                             print(k, v)
 
                 if answer == '2':
+                    data_index = 0
+                    recipe_index = 2
                     print('\n')
                     values = list(picked_item_dict.values())
-                    recipe = values[0][2]
+                    recipe = values[data_index][recipe_index]
                     print(', '.join(recipe))
 
                 if answer == '3':
@@ -141,9 +145,65 @@ def get_titles():
     return titles
 
 
+def ingr_input():
+    titles = ['type of alkohol u have','type of juice','type of syrup','type of fruit']
+    data = []
+   
+    for title_index in range(len(titles)-1):
+        user_input = input(titles[title_index])
+        if user_input != 'none':
+            data.append(user_input)
+
+    return data  
+
+
+def search_drink_by_ingredients(database, user_input):
+    filtered_dict = {}
+
+    test = ['vodka', 'orange juice', 'grenadine syrup']
+    user_input = test
+    for key, value in database.items():
+        if user_input in value:
+            filtered_dict[key] = value
+
+    # print(filtered_dict)
+    print('Found: ')
+    for key in filtered_dict.keys():
+        print(key)
+
+    
+    search_drink = True
+    got_match = False
+
+    while search_drink:
+
+        pick_drink = input('Please write drink which was found. ')
+
+        if pick_drink in filtered_dict.keys():
+            got_match = True
+        else:
+            print('wrong parameter')
+            search_drink = True
+
+        if got_match:   
+            if pick_drink in filtered_dict.keys():
+                match = filtered_dict[pick_drink]
+                ingredients_index = 1
+                match = match[ingredients_index] 
+                choose_drink(match,database)
+                search_drink = False
+
+
+
+
+        
+
+
+
 def make_drink(drinks_dict, user_input):
 
     match_dict = {}
+
 
     for key, value in drinks_dict.items():
         if user_input in value:
@@ -196,9 +256,13 @@ def import_statistic(filename='stats_drink_name'):
 
 
 def main():
-    ui.start_menu_select()
-    ui.handle_menu()
-    choose_drink(get_inputs(get_titles()), import_data_from_file())
+    # get_inputs(get_titles())  import_data_from_file()
+    test = ['easy', 'vodka', 'strong', 'sweet']
+    search_drink_by_ingredients(import_data_from_file(),test)
+    
+    # # ui.start_menu_select()
+    # # ui.handle_menu()
+    # choose_drink(test, import_data_from_file())
 
 
 if __name__ == '__main__':

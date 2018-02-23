@@ -7,17 +7,21 @@ whiskey,sprite,curacao syrup,lychee
 to jest powazny opis sukeua
 80,190,40
 vix,hard,whiskey,soft,sour
-twardzik,amarena,sranie w banie,pomidory
+whiskey,apple juice, curacao syrup
 VIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIXVIX
 80,120,40
 Planter's Punch,medium,rum,medium,sweet
-Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
+rum,lime juice,grenada syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
 planterrrplanterrrplanterrrplanterrrplanterrrplanterrr
 22,30
 kolejnydrineczek,medium,rum,medium,sweet
 Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes Angostura bitters,1 splash Soda water
 planterrrplanterrrplanterrrplanterrrplanterrrplanterrr
 2223,234
+czykolejnydrinkjestwabzie,medium,rum,medium,sweet
+Lime juice,Simple syrup,1 barspoon Grenadine,3 dashes dddds,asdasdad
+planterrrplanterrrplanterrrplanterrrplanterrrplanterrrasdadasdasd
+2223,234333333
 ENDENDENDENDENDENDENDENDENDENDENDENDENDENDENDEND
 ENDENDENDENDENDENDENDENDENDENDENDENDENDENDENDEND
 ENDENDENDENDENDENDENDENDENDENDENDENDENDENDENDEND
