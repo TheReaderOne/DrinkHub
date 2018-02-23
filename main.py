@@ -171,14 +171,32 @@ def search_drink_by_ingredients(database, user_input):
     for key in filtered_dict.keys():
         print(key)
 
+    
+    search_drink = True
+    got_match = False
 
-    pick_drink = input('Please write drink which was found.')
+    while search_drink:
 
-    if pick_drink in filtered_dict.keys():
-        match = filtered_dict[pick_drink]
-        ingredients_index = 1
-        match = match[ingredients_index] 
-        choose_drink(match,database)
+        pick_drink = input('Please write drink which was found. ')
+
+        if pick_drink in filtered_dict.keys():
+            got_match = True
+        else:
+            print('wrong parameter')
+            search_drink = True
+
+        if got_match:   
+            if pick_drink in filtered_dict.keys():
+                match = filtered_dict[pick_drink]
+                ingredients_index = 1
+                match = match[ingredients_index] 
+                choose_drink(match,database)
+                search_drink = False
+
+
+
+
+        
 
 
 
