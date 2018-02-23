@@ -8,8 +8,16 @@ import drinkcal
 def start_menu_select():
     while True:
         os.system('clear')
-        display_screen('start_screen.txt')
-        answer = input("Choose option : ")
+        display_screen('start_screen1.txt')
+        answer = input('Are you over 18 years old?  yes/no: ' + '\n')
+        if answer == "yes":
+            display_screen('start_screen.txt')
+            answer = input("Choose option :" + '\n')
+        else:
+            print ('It will be better if you drink Fanta!')
+            time.sleep(1)
+            display_screen('goodbye.txt')
+            sys.exit()
 
         if answer == '1':
             os.system('clear')
