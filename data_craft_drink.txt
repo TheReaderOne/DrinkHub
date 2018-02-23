@@ -1,4 +1,0 @@
-cosmo,vodka,orange juice,grenadine,none
-40ml vodka,200ml orange juice,50ml grenadine syrup
-sukeu,whiskey,sprite,curacao,lychee
-80ml whiskey,120ml sprite,40ml curacao syrup,lychee
