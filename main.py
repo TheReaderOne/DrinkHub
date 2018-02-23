@@ -64,7 +64,7 @@ def choose_drink(preference, database):
                 next_menu = True
 
         if next_menu:
-            return_to_main = '5'
+            return_to_main = '6'
             answer = '1'
             while return_to_main != answer:
                 print('\nmenu:\n')
@@ -115,7 +115,7 @@ def choose_drink(preference, database):
                     import_statistic()
 
                 if answer == '6':
-                    main()
+                    ui.handle_menu()
 
 
 def save_statistic_to_file(name_of_drink, filename='stats_drink_name'):
