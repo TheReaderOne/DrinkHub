@@ -23,7 +23,6 @@ def start_menu_select():
             sys.exit()
 
 
-
 def handle_menu():
     options = ["Choose your drink",
             "Make a drink",
@@ -59,7 +58,6 @@ def display_screen(filename):
     with open(filename) as f:
         read_data = f.read()
     print(read_data)
-
 
 def print_error_message(message):
     print(message)
