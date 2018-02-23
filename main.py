@@ -166,11 +166,12 @@ def get_titles():
 
 
 def ingr_input():
-    titles = ['type of alkohol u have', 'type of juice',
-              'type of syrup', 'type of fruit']
+    titles = ['type of alkohol you have ', 'type of juice ',
+              'type of syrup ', 'type of fruit ']
     data = []
+    print('If you dont have type of ingredients write none ')
 
-    for title_index in range(len(titles)-1):
+    for title_index in range(len(titles)):
         user_input = input(titles[title_index])
         if user_input != 'none':
             data.append(user_input)
@@ -181,8 +182,8 @@ def ingr_input():
 def search_drink_by_ingredients(database, user_input):
     filtered_dict = {}
 
-    test = ['vodka', 'orange juice', 'grenadine syrup']
-    user_input = test
+    # test = ['vodka', 'orange juice', 'grenadine syrup']
+    # user_input = test
     for key, value in database.items():
         if user_input in value:
             filtered_dict[key] = value
@@ -275,7 +276,7 @@ def main():
     ui.start_menu_select()
     ui.handle_menu()
     #choose_drink(test, import_data_from_file())
-
-
+    get_bac(23,23,23,false,500,4.6)
+    
 if __name__ == '__main__':
     main()
